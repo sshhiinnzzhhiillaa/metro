@@ -12,6 +12,7 @@ public class LineService {
         this.stationService = stationService;
     }
 
+    //TODO: delete and write new logic
     public void reverseTrain(Train train){
         if(train.getCurrentStation().getNextStation().equals(null) || train.getCurrentStation().getPrevStation().equals(null)){
             trainService.reverse(train);

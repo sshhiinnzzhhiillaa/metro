@@ -6,6 +6,7 @@ import java.util.Set;
 
 public class LineFactory {
 
+    //TODO: maybe replace to double linked list
     public static Line getLine(String name, List<Station> stations){
 
         Set<Station> stationSet = new LinkedHashSet<>();

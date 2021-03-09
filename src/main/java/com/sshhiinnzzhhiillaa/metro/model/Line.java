@@ -4,13 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Station {
+public class Line {
 
     private String name;
-    private Station nextStation;
-    private Station prevStation;
+    private Set<Station> stations;
+    private Station start;
+    private Station end;
 
 }
